@@ -105,6 +105,6 @@ func (f *LoadimpactSma) Write(metrics []telegraf.Metric) error {
 
 func init() {
 	outputs.Add("loadimpact_sma", func() telegraf.Output {
-		return &File{}
+		return &LoadimpactSma{}
 	})
 }
